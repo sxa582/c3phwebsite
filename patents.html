@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patents | C3PH</title>
+  <meta name="description" content="Patents, invention disclosures, and translational intellectual property from C3PH." />
+
+  <style>
+    :root {
+      --navy: #07192f;
+      --blue: #0b5cad;
+      --teal: #00a7a5;
+      --sky: #eef7ff;
+      --ink: #182235;
+      --muted: #667085;
+      --line: #d9e2ec;
+      --white: #ffffff;
+      --soft: #f7fafc;
+      --shadow: 0 20px 50px rgba(7, 25, 47, 0.12);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 30% 25%, var(--teal), transparent 36%), linear-gradient(135deg, var(--blue), var(--navy));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 900;
+      box-shadow: 0 12px 30px rgba(11, 92, 173, 0.22);
+    }
+
+    .brand small {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-weight: 650;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 12px 20px;
+      font-weight: 750;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--blue), var(--teal));
+      color: white;
+    }
+
+    .hero {
+      padding: 96px 0 70px;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(11,92,173,0.16), transparent 28%),
+        radial-gradient(circle at 80% 20%, rgba(0,167,165,0.18), transparent 28%),
+        linear-gradient(180deg, #f8fcff, #ffffff);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(0,167,165,0.1);
+      color: #006d6b;
+      border: 1px solid rgba(0,167,165,0.18);
+      font-size: 0.9rem;
+      font-weight: 750;
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      color: var(--navy);
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 5vw, 5rem);
+      max-width: 900px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 3vw, 3.1rem);
+    }
+
+    h3 {
+      font-size: 1.28rem;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .hero p {
+      font-size: 1.16rem;
+      max-width: 780px;
+      margin-top: 22px;
+    }
+
+    .section {
+      padding: 82px 0;
+    }
+
+    .section-soft {
+      background: var(--soft);
+    }
+
+    .section-head {
+      margin-bottom: 40px;
+      max-width: 860px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(7,25,47,0.06);
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: var(--sky);
+      color: var(--blue);
+      font-size: 1.35rem;
+      margin-bottom: 18px;
+    }
+
+    .patent-list {
+      display: grid;
+      gap: 22px;
+    }
+
+    .patent-item {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(7,25,47,0.06);
+    }
+
+    .patent-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .patent-meta span {
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: var(--sky);
+      color: var(--blue);
+      font-size: 0.84rem;
+      font-weight: 750;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, var(--navy), #0d477d);
+      color: white;
+      border-radius: 36px;
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      color: white;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,0.78);
+    }
+
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    @media (max-width: 920px) {
+      .grid-3,
+      .cta {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">C3</span>
+      <span>C3PH <small>Center for Cardiovascular Computational & Precision Health</small></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="focus-areas.html">Focus Areas</a>
+      <a href="publications.html">Publications</a>
+      <a href="patents.html">Patents</a>
+      <a href="projects.html">Projects</a>
+      <a href="news.html">News</a>
+      <a class="btn btn-primary" href="mailto:c3phteam@houstonmethodist.org">Collaborate</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Patents & Translation</div>
+    <h1>Transforming computational discoveries into deployable health technologies.</h1>
+    <p>
+      C3PH collaborates with investigators across Houston Methodist, Case Western Reserve University, Emory University, and other academic partners to develop deployable AI technologies, imaging tools, and translational computational health platforms.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-head">
+      <h2>Innovation portfolio.</h2>
+      <p>
+        C3PH develops translational technologies spanning multimodal AI, cardiovascular imaging, precision prevention, computational modeling, and deployable clinical decision support systems.
+      </p>
+    </div>
+
+    <div class="grid-3">
+
+      <article class="card">
+        <div class="icon">◎</div>
+        <h3>Imaging AI</h3>
+        <p>
+          Automated image analysis, segmentation, radiomics, and opportunistic phenotyping from routine clinical imaging.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">▣</div>
+        <h3>Clinical Decision Support</h3>
+        <p>
+          Precision prevention tools, cardiovascular risk prediction systems, and workflow-integrated AI platforms.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">⌘</div>
+        <h3>Multimodal Platforms</h3>
+        <p>
+          Integrated software ecosystems linking imaging, ECG, EHR, exposome, and outcomes data.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+
+    <div class="section-head">
+      <h2>Selected patents and translational innovation.</h2>
+      <p>
+        Representative intellectual property and translational technology areas developed in collaboration with Case Western Reserve University, Emory University, Houston Methodist, and multidisciplinary academic partners.
+      </p>
+    </div>
+
+    <div class="patent-list">
+
+      <article class="patent-item">
+        <h3>Prediction of stent expansion for treatments</h3>
+        <p>
+          AI-enabled prediction of coronary stent expansion using pre-stent intravascular imaging, lumen segmentation, and calcified plaque characterization to optimize procedural planning and treatment outcomes.
+        </p>
+
+        <div class="patent-meta">
+          <span>Granted Patent</span>
+          <span>Interventional Cardiology</span>
+          <span>Intravascular Imaging</span>
+          <span>CWRU Collaboration</span>
+        </div>
+      </article>
+
+      <article class="patent-item">
+        <h3>Prediction of stent expansion using finite element modeling and machine learning</h3>
+        <p>
+          Computational framework integrating intravascular imaging, finite element modeling, treatment simulations, and machine learning to estimate stent effectiveness and procedural response.
+        </p>
+
+        <div class="patent-meta">
+          <span>Finite Element Modeling</span>
+          <span>Machine Learning</span>
+          <span>Interventional AI</span>
+          <span>Case Western Reserve University</span>
+        </div>
+      </article>
+
+      <article class="patent-item">
+        <h3>Prediction of major adverse cardiovascular events from AI analysis of pericoronary adipose tissue</h3>
+        <p>
+          AI-derived analysis of pericoronary adipose tissue and CT imaging biomarkers for prediction of future cardiovascular events and precision prevention strategies.
+        </p>
+
+        <div class="patent-meta">
+          <span>MACE Prediction</span>
+          <span>CT Radiomics</span>
+          <span>Precision Prevention</span>
+          <span>Cardiovascular AI</span>
+        </div>
+      </article>
+
+      <article class="patent-item">
+        <h3>Deep-learning-based hepatic fat assessment</h3>
+        <p>
+          Automated liver and spleen segmentation approaches for scalable hepatic fat quantification and cardiometabolic phenotyping from routine imaging studies.
+        </p>
+
+        <div class="patent-meta">
+          <span>Deep Learning</span>
+          <span>Liver Fat AI</span>
+          <span>Cardiometabolic Imaging</span>
+          <span>CWRU Collaboration</span>
+        </div>
+      </article>
+
+      <article class="patent-item">
+        <h3>Digitized imaging data for patient management and obstructive CAD analysis</h3>
+        <p>
+          AI-enabled analysis of segmented non-contrast CT imaging data to support obstructive coronary artery disease characterization and patient management.
+        </p>
+
+        <div class="patent-meta">
+          <span>CAD Detection</span>
+          <span>CT Analytics</span>
+          <span>Patient Management</span>
+          <span>Clinical AI</span>
+        </div>
+      </article>
+
+      <article class="patent-item">
+        <h3>Medical analysis using spatiotemporal analysis and transformer-based models</h3>
+        <p>
+          Transformer-based and spatiotemporal deep learning architectures for predictive analysis from anatomic video sequences and longitudinal imaging data.
+        </p>
+
+        <div class="patent-meta">
+          <span>Transformers</span>
+          <span>Video AI</span>
+          <span>Deep Learning</span>
+          <span>Emory Collaboration</span>
+        </div>
+      </article>
+
+      <article class="patent-item">
+        <h3>Risk prediction of heart failure</h3>
+        <p>
+          AI-enabled extraction of pathophysiologic imaging features from clinical imaging datasets to predict incident heart failure and downstream cardiovascular outcomes.
+        </p>
+
+        <div class="patent-meta">
+          <span>Heart Failure</span>
+          <span>Risk Prediction</span>
+          <span>Imaging AI</span>
+          <span>Precision Cardiology</span>
+        </div>
+      </article>
+
+      <article class="patent-item">
+        <h3>Major adverse cardiovascular event risk prediction from comprehensive CT analysis</h3>
+        <p>
+          Systems and methods for predicting cardiovascular events using AI analysis of CT calcium score imaging, imaging biomarkers, and multimodal radiomic features.
+        </p>
+
+        <div class="patent-meta">
+          <span>MACE</span>
+          <span>Coronary Calcium</span>
+          <span>Radiomics</span>
+          <span>AI Risk Prediction</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="cta">
+      <div>
+        <h2>Interested in translation or licensing?</h2>
+        <p>
+          Contact C3PH to discuss translational collaborations, invention development, software-enabled healthcare technologies, and commercialization pathways.
+        </p>
+      </div>
+
+      <a class="btn btn-primary" href="mailto:c3phteam@houstonmethodist.org">
+        Contact us
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 Center for Cardiovascular Computational & Precision Health · Houston Methodist DeBakey Heart & Vascular Center
+  </div>
+</footer>
+
+</body>
+</html>

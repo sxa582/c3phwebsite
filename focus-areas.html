@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus Areas | C3PH</title>
+  <meta name="description" content="Explore the research focus areas of the Center for Cardiovascular Computational and Precision Health, including imaging AI, EHR analytics, exposome science, ECG AI, precision prevention, and outcomes research." />
+
+  <style>
+    :root {
+      --navy: #07192f;
+      --blue: #0b5cad;
+      --teal: #00a7a5;
+      --sky: #eaf6ff;
+      --ink: #182235;
+      --muted: #667085;
+      --line: #d9e2ec;
+      --white: #ffffff;
+      --soft: #f7fafc;
+      --shadow: 0 20px 50px rgba(7, 25, 47, 0.14);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(217, 226, 236, 0.8);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--navy);
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 30% 25%, var(--teal), transparent 36%), linear-gradient(135deg, var(--blue), var(--navy));
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-weight: 900;
+      box-shadow: 0 12px 30px rgba(11, 92, 173, 0.28);
+    }
+
+    .brand small {
+      display: block;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0;
+      font-size: 0.78rem;
+      margin-top: -3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-weight: 650;
+      color: #344054;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 12px 20px;
+      font-weight: 750;
+      border: 1px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--blue), var(--teal));
+      color: var(--white);
+      box-shadow: 0 14px 30px rgba(11, 92, 173, 0.22);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(circle at 80% 20%, rgba(0, 167, 165, 0.2), transparent 28%), radial-gradient(circle at 10% 20%, rgba(11, 92, 173, 0.18), transparent 28%), linear-gradient(180deg, #f8fcff, #ffffff);
+      padding: 96px 0 72px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 167, 165, 0.1);
+      color: #006d6b;
+      border: 1px solid rgba(0, 167, 165, 0.22);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 0.9rem;
+      font-weight: 750;
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.12;
+      margin: 0;
+      color: var(--navy);
+      letter-spacing: -0.045em;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 5vw, 5rem);
+      max-width: 850px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 3.5vw, 3.2rem);
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .hero p {
+      font-size: 1.18rem;
+      color: #475467;
+      max-width: 760px;
+      margin: 24px 0 0;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid rgba(217, 226, 236, 0.9);
+      border-radius: 34px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 4px;
+    }
+
+    .mini-item {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 14px;
+      align-items: center;
+      padding: 16px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    .icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--sky);
+      color: var(--blue);
+      font-size: 1.3rem;
+      flex: 0 0 auto;
+    }
+
+    .mini-item strong {
+      display: block;
+      color: var(--navy);
+    }
+
+    .mini-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .section {
+      padding: 86px 0;
+    }
+
+    .section-soft {
+      background: var(--soft);
+    }
+
+    .section-head {
+      max-width: 860px;
+      margin-bottom: 42px;
+    }
+
+    .section-head p {
+      font-size: 1.08rem;
+      margin-top: 14px;
+    }
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 26px;
+    }
+
+    .focus-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: 0 12px 30px rgba(7, 25, 47, 0.06);
+      display: grid;
+      gap: 16px;
+    }
+
+    .focus-card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .focus-card ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .focus-card li {
+      margin: 7px 0;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #eef7ff;
+      color: #194b7d;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    .model {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .model-step {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(7, 25, 47, 0.06);
+    }
+
+    .model-step strong {
+      display: block;
+      font-size: 2rem;
+      color: var(--blue);
+      letter-spacing: -0.05em;
+      margin-bottom: 10px;
+    }
+
+    .disease-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .disease-card {
+      display: grid;
+      grid-template-columns: 108px 1fr;
+      gap: 22px;
+      align-items: center;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(7, 25, 47, 0.06);
+    }
+
+    .disease-card img {
+      width: 108px;
+      height: 108px;
+      border-radius: 999px;
+      object-fit: cover;
+      background: var(--sky);
+      border: 1px solid rgba(11, 92, 173, 0.18);
+    }
+
+    .disease-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .disease-card p {
+      margin: 0;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, var(--navy), #0d477d);
+      color: var(--white);
+      border-radius: 36px;
+      padding: 52px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      color: var(--white);
+    }
+
+    .cta p {
+      color: rgba(255, 255, 255, 0.78);
+      max-width: 720px;
+    }
+
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 920px) {
+      .hero-grid, .focus-grid, .cta {
+        grid-template-columns: 1fr;
+      }
+
+      .model {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .disease-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .hero {
+        padding: 62px 0 52px;
+      }
+
+      .model {
+        grid-template-columns: 1fr;
+      }
+
+      .disease-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .disease-card img {
+        margin: 0 auto;
+      }
+
+      .cta {
+        padding: 30px;
+      }
+
+      .brand small {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="C3PH Home">
+        <span class="brand-mark">C3</span>
+        <span>C3PH <small>Center for Cardiovascular Computational & Precision Health</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="focus-areas.html">Focus Areas</a>
+        <a href="publications.html">Publications</a>
+        <a href="patents.html">Patents</a>
+        <a href="projects.html">Projects</a>
+        <a href="news.html">News</a>
+        <a class="btn btn-primary" href="mailto:c3phteam@houstonmethodist.org">Collaborate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Focus Areas</div>
+          <h1>Computational methods for precision cardiovascular health.</h1>
+          <p>
+            C3PH organizes its work around interconnected focus areas that bridge clinical medicine, artificial intelligence, imaging, biosignals, environmental exposures, and outcomes research.
+          </p>
+        </div>
+        <aside class="hero-card">
+          <div class="mini-list">
+            <div class="mini-item"><div class="icon">◎</div><div><strong>Phenotyping</strong><span>Turning complex clinical data into measurable disease signatures.</span></div></div>
+            <div class="mini-item"><div class="icon">⌘</div><div><strong>Prediction</strong><span>Building models that identify risk earlier and more precisely.</span></div></div>
+            <div class="mini-item"><div class="icon">↗</div><div><strong>Translation</strong><span>Moving validated tools into clinical and population health workflows.</span></div></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Research Domains</div>
+          <h2>Integrated focus areas.</h2>
+          <p>
+            Each focus area is designed to be methodologically rigorous, clinically relevant, and scalable across large health-system datasets.
+          </p>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card">
+            <div class="focus-card-header">
+              <div class="icon">◎</div>
+              <h3>Radiomics and Imaging AI</h3>
+            </div>
+            <p>
+              We develop explainable imaging pipelines that extract quantitative phenotypes from CT, CMR, echocardiography, retinal imaging, and other clinical imaging modalities.
+            </p>
+            <ul>
+              <li>Opportunistic cardiovascular and cardiometabolic phenotyping</li>
+              <li>Calcium scoring, fat quantification, vascular phenotypes, and organ-level imaging biomarkers</li>
+              <li>Deep learning segmentation and radiomics for risk prediction</li>
+            </ul>
+            <div class="pill-row">
+              <span class="pill">CT AI</span>
+              <span class="pill">CMR</span>
+              <span class="pill">Echo</span>
+              <span class="pill">Retinal imaging</span>
+            </div>
+          </article>
+
+          <article class="focus-card">
+            <div class="focus-card-header">
+              <div class="icon">▣</div>
+              <h3>EHR Analytics and Deep Phenotyping</h3>
+            </div>
+            <p>
+              We transform structured and unstructured EHR data into computable phenotypes that support discovery, risk modeling, and clinical decision support.
+            </p>
+            <ul>
+              <li>Longitudinal disease trajectory modeling</li>
+              <li>LLM-enabled clinical text phenotyping</li>
+              <li>Integration of diagnoses, labs, medications, procedures, notes, and outcomes</li>
+            </ul>
+            <div class="pill-row">
+              <span class="pill">EHR</span>
+              <span class="pill">NLP</span>
+              <span class="pill">LLMs</span>
+              <span class="pill">Clinical trajectories</span>
+            </div>
+          </article>
+
+          <article class="focus-card">
+            <div class="focus-card-header">
+              <div class="icon">◍</div>
+              <h3>Exposome Science</h3>
+            </div>
+            <p>
+              We link clinical data with high-resolution measures of place, environment, climate, and social context to understand how external exposures shape cardiovascular and metabolic health.
+            </p>
+            <ul>
+              <li>Air pollution, heat, greenspace, walkability, light pollution, and deprivation</li>
+              <li>Neighborhood-level risk signatures and environmental fingerprints</li>
+              <li>Place-based disparities and resilience research</li>
+            </ul>
+            <div class="pill-row">
+              <span class="pill">Air pollution</span>
+              <span class="pill">Heat</span>
+              <span class="pill">Greenspace</span>
+              <span class="pill">Neighborhoods</span>
+            </div>
+          </article>
+
+          <article class="focus-card">
+            <div class="focus-card-header">
+              <div class="icon">⌁</div>
+              <h3>Biosignals and ECG AI</h3>
+            </div>
+            <p>
+              We build artificial intelligence models that use ECGs and physiologic signals to detect subclinical disease, predict outcomes, and improve screening.
+            </p>
+            <ul>
+              <li>ECG image and waveform-based AI</li>
+              <li>Prediction of heart failure, coronary disease, valvular disease, and cardiometabolic risk</li>
+              <li>Integration with telemetry and continuous physiologic signals</li>
+            </ul>
+            <div class="pill-row">
+              <span class="pill">ECG AI</span>
+              <span class="pill">Telemetry</span>
+              <span class="pill">Biosignals</span>
+              <span class="pill">Screening</span>
+            </div>
+          </article>
+
+          <article class="focus-card">
+            <div class="focus-card-header">
+              <div class="icon">⇄</div>
+              <h3>Precision Prevention</h3>
+            </div>
+            <p>
+              We develop models and decision-support strategies that help identify the right patient, at the right time, for the right preventive intervention.
+            </p>
+            <ul>
+              <li>Personalized cardiovascular risk prediction</li>
+              <li>Imaging-guided prevention strategies</li>
+              <li>Clinical decision support for risk factor treatment and preventive care</li>
+            </ul>
+            <div class="pill-row">
+              <span class="pill">Risk prediction</span>
+              <span class="pill">Prevention</span>
+              <span class="pill">Decision support</span>
+            </div>
+          </article>
+
+          <article class="focus-card">
+            <div class="focus-card-header">
+              <div class="icon">↳</div>
+              <h3>Outcomes and Implementation Science</h3>
+            </div>
+            <p>
+              We evaluate the clinical, economic, and equity impact of computational tools using real-world evidence and learning health system methods.
+            </p>
+            <ul>
+              <li>Comparative effectiveness and real-world evidence</li>
+              <li>Cost-effectiveness and population impact modeling</li>
+              <li>Fairness, generalizability, and implementation evaluation</li>
+            </ul>
+            <div class="pill-row">
+              <span class="pill">RWE</span>
+              <span class="pill">Equity</span>
+              <span class="pill">Implementation</span>
+              <span class="pill">Health systems</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Disease Areas</div>
+          <h2>Disease focus areas.</h2>
+          <p>
+            C3PH advances precision health through artificial intelligence, multimodal imaging, exposomics, and large-scale clinical data to better understand, predict, and prevent cardiometabolic and aging-related diseases.
+          </p>
+        </div>
+
+        <div class="disease-grid">
+          <article class="disease-card">
+            <img src="images/disease-ascvd.jpg" alt="Atherosclerotic cardiovascular disease icon">
+            <div>
+              <h3>Atherosclerotic Cardiovascular Disease</h3>
+              <p>Risk prediction, imaging-derived plaque and calcification phenotypes, prevention strategies, and outcomes modeling.</p>
+            </div>
+          </article>
+
+          <article class="disease-card">
+            <img src="images/disease-diabetes.jpg" alt="Diabetes icon">
+            <div>
+              <h3>Diabetes</h3>
+              <p>Prediction of incident diabetes, cardiometabolic trajectories, treatment response, and environmental risk modifiers.</p>
+            </div>
+          </article>
+
+          <article class="disease-card">
+            <img src="images/disease-dementia.jpg" alt="Dementia icon">
+            <div>
+              <h3>Dementia</h3>
+              <p>Vascular, environmental, metabolic, and imaging signatures linked to cognitive decline and aging-related brain health.</p>
+            </div>
+          </article>
+
+          <article class="disease-card">
+            <img src="images/disease-liver.jpg" alt="Metabolic-associated liver disease icon">
+            <div>
+              <h3>Metabolic-Associated Liver Disease</h3>
+              <p>AI-enabled liver fat phenotyping, cardiometabolic risk stratification, and longitudinal outcomes research.</p>
+            </div>
+          </article>
+
+          <article class="disease-card">
+            <img src="images/disease-adiposity.jpg" alt="Adiposity icon">
+            <div>
+              <h3>Adiposity</h3>
+              <p>Body composition, ectopic fat, visceral and epicardial adiposity, obesity phenotypes, and precision treatment pathways.</p>
+            </div>
+          </article>
+
+          <article class="disease-card">
+            <img src="images/disease-ckd.jpg" alt="Chronic kidney disease icon">
+            <div>
+              <h3>Chronic Kidney Disease</h3>
+              <p>Cardio-kidney-metabolic risk prediction, kidney disease trajectories, and integrated prevention strategies.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">C3PH Model</div>
+          <h2>From data to clinical impact.</h2>
+        </div>
+
+        <div class="model">
+          <div class="model-step">
+            <strong>01</strong>
+            <h3>Integrate</h3>
+            <p>Unify multimodal clinical, imaging, biosignal, and geospatial data.</p>
+          </div>
+          <div class="model-step">
+            <strong>02</strong>
+            <h3>Discover</h3>
+            <p>Extract phenotypes, signatures, clusters, and predictive features.</p>
+          </div>
+          <div class="model-step">
+            <strong>03</strong>
+            <h3>Validate</h3>
+            <p>Test models for accuracy, robustness, fairness, and generalizability.</p>
+          </div>
+          <div class="model-step">
+            <strong>04</strong>
+            <h3>Translate</h3>
+            <p>Deploy validated insights into care delivery and population health.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Interested in collaborating?</h2>
+            <p>
+              C3PH welcomes collaborations across clinical research, artificial intelligence, imaging, environmental health, implementation science, and health-system innovation.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="mailto:c3phteam@houstonmethodist.org">Contact us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> Center for Cardiovascular Computational and Precision Health. All rights reserved.</div>
+      <div>Houston Methodist DeBakey Heart & Vascular Center</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team | C3PH</title>
+  <meta name="description" content="Meet the C3PH team at the Center for Cardiovascular Computational and Precision Health." />
+
+  <style>
+    :root {
+      --navy: #07192f;
+      --blue: #0b5cad;
+      --teal: #00a7a5;
+      --sky: #eef7ff;
+      --ink: #182235;
+      --muted: #667085;
+      --line: #d9e2ec;
+      --white: #ffffff;
+      --soft: #f7fafc;
+      --shadow: 0 20px 50px rgba(7, 25, 47, 0.14);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.65;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 30% 25%, var(--teal), transparent 36%), linear-gradient(135deg, var(--blue), var(--navy));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 900;
+      box-shadow: 0 12px 30px rgba(11, 92, 173, 0.22);
+    }
+
+    .brand small {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-weight: 650;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 12px 20px;
+      font-weight: 750;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--blue), var(--teal));
+      color: white;
+    }
+
+    .hero {
+      padding: 96px 0 70px;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(11, 92, 173, 0.16), transparent 28%),
+        radial-gradient(circle at 80% 20%, rgba(0, 167, 165, 0.18), transparent 28%),
+        linear-gradient(180deg, #f8fcff, #ffffff);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(0, 167, 165, 0.1);
+      color: #006d6b;
+      border: 1px solid rgba(0, 167, 165, 0.18);
+      font-size: 0.9rem;
+      font-weight: 750;
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      color: var(--navy);
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 5vw, 5rem);
+      max-width: 900px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 3vw, 3.1rem);
+    }
+
+    h3 {
+      font-size: 1.18rem;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .hero p {
+      font-size: 1.16rem;
+      max-width: 760px;
+      margin-top: 22px;
+    }
+
+    .section {
+      padding: 82px 0;
+    }
+
+    .section-head {
+      margin-bottom: 40px;
+      max-width: 820px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .team-card {
+      width: 100%;
+      text-align: left;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(7, 25, 47, 0.06);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      font: inherit;
+      overflow: hidden;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: rgba(11, 92, 173, 0.35);
+    }
+
+    .team-card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      background: var(--sky);
+    }
+
+    .team-card p {
+      margin: 8px 0 0;
+      font-size: 0.92rem;
+    }
+
+    .team-card .click-note {
+      display: inline-flex;
+      margin-top: 14px;
+      color: var(--blue);
+      font-size: 0.84rem;
+      font-weight: 750;
+    }
+
+    .team-expand {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.28s ease;
+    }
+
+    .team-expand-inner {
+      overflow: hidden;
+    }
+
+    .team-card.active .team-expand {
+      grid-template-rows: 1fr;
+      margin-top: 18px;
+    }
+
+    .expand-content {
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+    .expand-role {
+      display: inline-flex;
+      margin-bottom: 14px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: var(--sky);
+      color: var(--blue);
+      font-weight: 800;
+      font-size: 0.84rem;
+    }
+
+    .expand-bio {
+      font-size: 0.96rem;
+      margin-bottom: 16px;
+    }
+
+    .expand-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .expand-tags span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(0, 167, 165, 0.1);
+      color: #006d6b;
+      font-size: 0.82rem;
+      font-weight: 750;
+    }
+
+    
+
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    @media (max-width: 1050px) {
+      .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 820px) {
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .modal-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .modal-image-wrap {
+        padding: 28px 28px 10px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .brand small {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">C3</span>
+      <span>C3PH <small>Center for Cardiovascular Computational & Precision Health</small></span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="focus-areas.html">Focus Areas</a>
+        <a href="publications.html">Publications</a>
+        <a href="patents.html">Patents</a>
+        <a href="projects.html">Projects</a>
+        <a href="news.html">News</a>
+        <a class="btn btn-primary" href="mailto:c3phteam@houstonmethodist.org">Collaborate</a>
+      </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">C3PH Team</div>
+      <h1>Interdisciplinary expertise across cardiology, data science, AI, imaging, and population health.</h1>
+      <p>
+        Meet the investigators, scientists, engineers, fellows, and systems experts advancing computational and precision cardiovascular health.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our team.</h2>
+        <p>Click any team member to view a brief profile.</p>
+      </div>
+
+      <div class="team-grid" id="teamGrid"></div>
+    </div>
+  </section>
+</main>
+
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    © 2026 Center for Cardiovascular Computational & Precision Health · Houston Methodist DeBakey Heart & Vascular Center
+  </div>
+</footer>
+
+<script>
+  const teamMembers = [
+    {
+      name: "Khurram Nasir, MD, MPH, MSc",
+      role: "C3PH Co-Director",
+      image: "images/khurram-nasir.jpg",
+      bio: "Dr. Nasir is a preventive cardiologist and population health leader whose work focuses on cardiovascular prevention, imaging, implementation science, health equity, and scalable strategies to improve cardiometabolic outcomes.",
+      tags: ["Prevention", "Population Health", "Imaging", "Implementation"]
+    },
+    {
+      name: "Sadeer Al-Kindi, MD",
+      role: "C3PH Co-Director",
+      image: "images/sadeer-alkindi.jpg",
+      bio: "Dr. Al-Kindi is a physician-scientist focused on computational cardiovascular medicine, multimodal AI, imaging analytics, environmental health, and precision prevention.",
+      tags: ["Multimodal AI", "Exposome", "Imaging", "Precision Health"]
+    },
+    {
+      name: "Zulqarnain Javed, PhD",
+      role: "Social Determinants of Health",
+      image: "images/zulqarnain-javed.jpg",
+      bio: "Dr. Javed contributes expertise in social determinants of health, epidemiology, disparities research, and the integration of social context into cardiometabolic risk prediction.",
+      tags: ["SDOH", "Epidemiology", "Equity"]
+    },
+    {
+      name: "Weichuan Dong, PhD",
+      role: "Exposome and Geospatial Analytics",
+      image: "images/weichuan-dong.jpg",
+      bio: "Dr. Dong leads geospatial and exposome analytics focused on linking environmental, spatial, and neighborhood-level data with clinical outcomes.",
+      tags: ["Geospatial", "Exposome", "Analytics"]
+    },
+    {
+      name: "Mohammad Alkhaleefah, PhD",
+      role: "Radiomics and AI",
+      image: "images/mohammad-alkhaleefah.jpg",
+      bio: "Dr. Alkhaleefah focuses on radiomics, artificial intelligence, and computational imaging approaches for cardiovascular and cardiometabolic phenotyping.",
+      tags: ["Radiomics", "Imaging AI", "Deep Learning"]
+    },
+    {
+      name: "Ryan King, PhD",
+      role: "Multimodal AI and EHR Analytics",
+      image: "images/ryan-king.jpg",
+      bio: "Dr. King develops multimodal AI and EHR-based analytic approaches to extract longitudinal phenotypes and predict clinical outcomes from complex health system data.",
+      tags: ["EHR", "Multimodal AI", "Prediction"]
+    },
+    {
+      name: "Izza Shahid, MD",
+      role: "Post-Doctoral Fellow",
+      image: "images/izza-shahid.jpg",
+      bio: "Dr. Shahid supports C3PH research across cardiometabolic outcomes, clinical phenotyping, environmental health, and translational cardiovascular analytics.",
+      tags: ["Clinical Research", "Cardiometabolic", "Outcomes"]
+    },
+    {
+      name: "Jad Ardakani, MD",
+      role: "Clinical Research Fellow",
+      image: "images/jad-ardakani.jpg",
+      bio: "Dr. Ardakani contributes to clinical research projects focused on environmental exposures, cardiometabolic disease, and large-scale observational analytics.",
+      tags: ["Clinical Research", "Diabetes", "Environment"]
+    },
+    {
+      name: "Adi Siddharth, MS",
+      role: "Research Engineer",
+      image: "images/adi-siddharth.jpg",
+      bio: "Adi supports research engineering, model development, data pipelines, and computational workflows for multimodal AI and clinical prediction projects.",
+      tags: ["Engineering", "AI Models", "Pipelines"]
+    },
+    {
+      name: "Budhaditya Bose, MS",
+      role: "Data Scientist",
+      image: "images/budhaditya-bose.jpg",
+      bio: "Budhaditya develops data science workflows, predictive models, and analytic pipelines using EHR, imaging, environmental, and outcomes data.",
+      tags: ["Data Science", "Modeling", "EHR"]
+    },
+    {
+      name: "Rakesh Gullapelli, MS",
+      role: "Data Scientist",
+      image: "images/rakesh-gullapelli.jpg",
+      bio: "Rakesh contributes data science expertise in large-scale clinical analytics, cohort development, feature engineering, and model validation.",
+      tags: ["Data Science", "Validation", "Cohorts"]
+    },
+    {
+      name: "Sarayu Chandra Mouli, PhD",
+      role: "Post-Doctoral Fellow",
+      image: "images/sarayu-mouli.jpg",
+      bio: "Dr. Mouli works on environmental health, nature-based health interventions, mobility data, and links between place, behavior, and health outcomes.",
+      tags: ["Environment", "Mobility", "Public Health"]
+    },
+    {
+      name: "Asma Rayani, MD, MPH",
+      role: "Post-Doctoral Fellow",
+      image: "images/asma-rayani.jpg",
+      bio: "Dr. Rayani contributes to cardiometabolic, population health, and outcomes research using clinical and public health data sources.",
+      tags: ["Population Health", "Outcomes", "Clinical Research"]
+    },
+    {
+      name: "Soha Soni, MD, MPH",
+      role: "Post-Doctoral Fellow",
+      image: "images/soha-soni.jpg",
+      bio: "Dr. Soni supports research in preventive cardiology, epidemiology, cardiometabolic disease, and health outcomes analytics.",
+      tags: ["Prevention", "Epidemiology", "Outcomes"]
+    },
+    {
+      name: "Charlie Nicolas",
+      role: "Systems Architect",
+      image: "images/charlie-nicolas.jpg",
+      bio: "Charlie supports the technical architecture, computational systems, data infrastructure, and secure workflows that enable C3PH research operations.",
+      tags: ["Systems", "Infrastructure", "Security"]
+    },
+    {
+      name: "Elijah Rockers, MS",
+      role: "Systems Architect",
+      image: "images/elijah-rockers.jpg",
+      bio: "Elijah contributes to systems architecture, AI infrastructure, software workflows, and scalable computational tools for clinical AI research.",
+      tags: ["Systems", "AI Infrastructure", "Software"]
+    }
+  ];
+
+  const teamGrid = document.getElementById("teamGrid");
+  
+
+  teamMembers.forEach((member, index) => {
+    const card = document.createElement("button");
+    card.className = "team-card";
+    card.type = "button";
+    card.onclick = () => toggleCard(card, member);
+    card.innerHTML = `
+      <img src="${member.image}" alt="${member.name}" onerror="this.src='images/team-placeholder.jpg'">
+      <h3>${member.name}</h3>
+      <p>${member.role}</p>
+      <span class="click-note">View profile ↓</span>
+
+      <div class="team-expand">
+        <div class="team-expand-inner">
+          <div class="expand-content">
+            <div class="expand-role">${member.role}</div>
+            <p class="expand-bio">${member.bio}</p>
+            <div class="expand-tags">
+              ${member.tags.map(tag => `<span>${tag}</span>`).join("")}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    teamGrid.appendChild(card);
+  });
+
+  function toggleCard(card, member) {
+    const isActive = card.classList.contains("active");
+
+    document.querySelectorAll(".team-card").forEach(c => {
+      c.classList.remove("active");
+      const note = c.querySelector(".click-note");
+      if (note) note.textContent = "View profile ↓";
+    });
+
+    if (!isActive) {
+      card.classList.add("active");
+      const note = card.querySelector(".click-note");
+      if (note) note.textContent = "Hide profile ↑";
+
+      setTimeout(() => {
+        card.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }, 120);
+    }
+  }
+</script>
+
+</body>
+</html>
