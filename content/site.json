@@ -1,0 +1,613 @@
+{
+  "team": [
+    {
+      "name": "Khurram Nasir, MD, MPH, MSc",
+      "role": "C3PH Co-Director",
+      "image": "images/khurram-nasir.jpg",
+      "bio": "Dr. Nasir is a preventive cardiologist and population health leader whose work focuses on cardiovascular prevention, imaging, implementation science, health equity, and scalable strategies to improve cardiometabolic outcomes.",
+      "tags": [
+        "Prevention",
+        "Population Health",
+        "Imaging",
+        "Implementation"
+      ]
+    },
+    {
+      "name": "Sadeer Al-Kindi, MD",
+      "role": "C3PH Co-Director",
+      "image": "images/sadeer-alkindi.jpg",
+      "bio": "Dr. Al-Kindi is a physician-scientist focused on computational cardiovascular medicine, multimodal AI, imaging analytics, environmental health, and precision prevention.",
+      "tags": [
+        "Multimodal AI",
+        "Exposome",
+        "Imaging",
+        "Precision Health"
+      ]
+    },
+    {
+      "name": "Zulqarnain Javed, PhD",
+      "role": "Social Determinants of Health",
+      "image": "images/zulqarnain-javed.jpg",
+      "bio": "Dr. Javed contributes expertise in social determinants of health, epidemiology, disparities research, and the integration of social context into cardiometabolic risk prediction.",
+      "tags": [
+        "SDOH",
+        "Epidemiology",
+        "Equity"
+      ]
+    },
+    {
+      "name": "Weichuan Dong, PhD",
+      "role": "Exposome and Geospatial Analytics",
+      "image": "images/weichuan-dong.jpg",
+      "bio": "Dr. Dong leads geospatial and exposome analytics focused on linking environmental, spatial, and neighborhood-level data with clinical outcomes.",
+      "tags": [
+        "Geospatial",
+        "Exposome",
+        "Analytics"
+      ]
+    },
+    {
+      "name": "Mohammad Alkhaleefah, PhD",
+      "role": "Radiomics and AI",
+      "image": "images/mohammad-alkhaleefah.jpg",
+      "bio": "Dr. Alkhaleefah focuses on radiomics, artificial intelligence, and computational imaging approaches for cardiovascular and cardiometabolic phenotyping.",
+      "tags": [
+        "Radiomics",
+        "Imaging AI",
+        "Deep Learning"
+      ]
+    },
+    {
+      "name": "Ryan King, PhD",
+      "role": "Multimodal AI and EHR Analytics",
+      "image": "images/ryan-king.jpg",
+      "bio": "Dr. King develops multimodal AI and EHR-based analytic approaches to extract longitudinal phenotypes and predict clinical outcomes from complex health system data.",
+      "tags": [
+        "EHR",
+        "Multimodal AI",
+        "Prediction"
+      ]
+    },
+    {
+      "name": "Izza Shahid, MD",
+      "role": "Post-Doctoral Fellow",
+      "image": "images/izza-shahid.jpg",
+      "bio": "Dr. Shahid supports C3PH research across cardiometabolic outcomes, clinical phenotyping, environmental health, and translational cardiovascular analytics.",
+      "tags": [
+        "Clinical Research",
+        "Cardiometabolic",
+        "Outcomes"
+      ]
+    },
+    {
+      "name": "Jad Ardakani, MD",
+      "role": "Clinical Research Fellow",
+      "image": "images/jad-ardakani.jpg",
+      "bio": "Dr. Ardakani contributes to clinical research projects focused on environmental exposures, cardiometabolic disease, and large-scale observational analytics.",
+      "tags": [
+        "Clinical Research",
+        "Diabetes",
+        "Environment"
+      ]
+    },
+    {
+      "name": "Adi Siddharth, MS",
+      "role": "Research Engineer",
+      "image": "images/adi-siddharth.jpg",
+      "bio": "Adi supports research engineering, model development, data pipelines, and computational workflows for multimodal AI and clinical prediction projects.",
+      "tags": [
+        "Engineering",
+        "AI Models",
+        "Pipelines"
+      ]
+    },
+    {
+      "name": "Budhaditya Bose, MS",
+      "role": "Data Scientist",
+      "image": "images/budhaditya-bose.jpg",
+      "bio": "Budhaditya develops data science workflows, predictive models, and analytic pipelines using EHR, imaging, environmental, and outcomes data.",
+      "tags": [
+        "Data Science",
+        "Modeling",
+        "EHR"
+      ]
+    },
+    {
+      "name": "Rakesh Gullapelli, MS",
+      "role": "Data Scientist",
+      "image": "images/rakesh-gullapelli.jpg",
+      "bio": "Rakesh contributes data science expertise in large-scale clinical analytics, cohort development, feature engineering, and model validation.",
+      "tags": [
+        "Data Science",
+        "Validation",
+        "Cohorts"
+      ]
+    },
+    {
+      "name": "Sarayu Chandra Mouli, PhD",
+      "role": "Post-Doctoral Fellow",
+      "image": "images/sarayu-mouli.jpg",
+      "bio": "Dr. Mouli works on environmental health, nature-based health interventions, mobility data, and links between place, behavior, and health outcomes.",
+      "tags": [
+        "Environment",
+        "Mobility",
+        "Public Health"
+      ]
+    },
+    {
+      "name": "Asma Rayani, MD, MPH",
+      "role": "Post-Doctoral Fellow",
+      "image": "images/asma-rayani.jpg",
+      "bio": "Dr. Rayani contributes to cardiometabolic, population health, and outcomes research using clinical and public health data sources.",
+      "tags": [
+        "Population Health",
+        "Outcomes",
+        "Clinical Research"
+      ]
+    },
+    {
+      "name": "Soha Soni, MD, MPH",
+      "role": "Post-Doctoral Fellow",
+      "image": "images/soha-soni.jpg",
+      "bio": "Dr. Soni supports research in preventive cardiology, epidemiology, cardiometabolic disease, and health outcomes analytics.",
+      "tags": [
+        "Prevention",
+        "Epidemiology",
+        "Outcomes"
+      ]
+    },
+    {
+      "name": "Charlie Nicolas",
+      "role": "Systems Architect",
+      "image": "images/charlie-nicolas.jpg",
+      "bio": "Charlie supports the technical architecture, computational systems, data infrastructure, and secure workflows that enable C3PH research operations.",
+      "tags": [
+        "Systems",
+        "Infrastructure",
+        "Security"
+      ]
+    },
+    {
+      "name": "Elijah Rockers, MS",
+      "role": "Systems Architect",
+      "image": "images/elijah-rockers.jpg",
+      "bio": "Elijah contributes to systems architecture, AI infrastructure, software workflows, and scalable computational tools for clinical AI research.",
+      "tags": [
+        "Systems",
+        "AI Infrastructure",
+        "Software"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "The environmental exposome in heart failure risk and progression.",
+      "topic": "Environmental Health",
+      "authors": "Hahad O, Wass S, Rajagopalan S, Abohashem S, Hao H, et al. Al-Kindi S.",
+      "journal": "Nature Reviews Cardiology",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41582253/"
+    },
+    {
+      "title": "Artificial intelligence-based automated interpretation of images of electrocardiograms: development and multinational validation of ECG-GPT.",
+      "topic": "ECG AI",
+      "authors": "Khunte A, Sangha V, Oikonomou EK, et al. Rockers E, Al-Kindi S, Khera R.",
+      "journal": "European Heart Journal Digital Health",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41853639/"
+    },
+    {
+      "title": "Fundus Photograph-Derived Computational Features Predict Risk of Cardiovascular Events in the Chronic Renal Insufficiency Cohort Clinical Observational Study.",
+      "topic": "Retinal AI",
+      "authors": "Dhamdhere R, Modanwal G, Mutha P, et al. Al-Kindi S.",
+      "journal": "Kidney360",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40824712/"
+    },
+    {
+      "title": "AI-derived left-to-right cardiac chamber volume ratios in coronary artery calcium scans strongly predict heart failure.",
+      "topic": "Imaging AI",
+      "authors": "Naghavi M, Mirjalili SR, Atlas K, et al. Nasir K.",
+      "journal": "European Heart Journal Cardiovascular Imaging",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41591983/"
+    },
+    {
+      "title": "Climate change and non-communicable diseases: An invisible syndemic.",
+      "topic": "Climate & Health",
+      "authors": "Parameswaran G, Al-Kindi S, Rajagopalan S.",
+      "journal": "PLoS Medicine",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42101971/"
+    },
+    {
+      "title": "The socio-environmental exposome and maternal cardiometabolic health in the US: a machine learning approach.",
+      "topic": "Exposomics",
+      "authors": "Vieira de Oliveira Salerno PR, Chen Z, Swain I, et al. Al-Kindi S.",
+      "journal": "American Journal of Preventive Cardiology",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42006431/"
+    },
+    {
+      "title": "Hematologic biomarkers of aging (HemeAge) and cardiovascular risk: a machine learning analysis in two cohorts.",
+      "topic": "Aging",
+      "authors": "Siddharth A, Zidar D, Bose B, Gullapelli R, Nicholas JC, Nasir K, Al-Kindi S.",
+      "journal": "American Journal of Preventive Cardiology",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42006429/"
+    },
+    {
+      "title": "Short-term associations between ambient temperature and incident myocardial infarction.",
+      "topic": "Temperature & Cardiovascular Risk",
+      "authors": "Al-Kindi S, Chu L, Bose B, Nicolas C, Gullapelli R, et al.",
+      "journal": "American Journal of Preventive Cardiology",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41487460/"
+    },
+    {
+      "title": "Transportation noise exposure and incident type 2 diabetes.",
+      "topic": "Noise & Diabetes",
+      "authors": "Ardakani J, Shahid I, Gullapelli R, et al. Nasir K, Al-Kindi S.",
+      "journal": "Diabetes, Obesity and Metabolism",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41645657/"
+    },
+    {
+      "title": "Opportunistic automated aortic valve calcification assessment in low-cost screening CT exams.",
+      "topic": "Imaging AI",
+      "authors": "Subramaniam A, Wu H, Azarianpour S, et al. Hoori A, Al-Kindi S.",
+      "journal": "Scientific Reports",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41513939/"
+    },
+    {
+      "title": "Neighborhood greenspace visits and mental health: insights from mobility data across nine U.S. metropolitan areas.",
+      "topic": "Greenspace & Mental Health",
+      "authors": "Chandra Mouli S, Zhang T, Chen Z, et al. Al-Kindi S.",
+      "journal": "Frontiers in Public Health",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41725747/"
+    },
+    {
+      "title": "Disparities in county-level vulnerability to cardiovascular mortality associated with extreme heat exposure.",
+      "topic": "Heat & Health Equity",
+      "authors": "Yu A, Dong W, Rajagopalan S, Nasir K, Al-Kindi S.",
+      "journal": "JACC Advances",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41734416/"
+    },
+    {
+      "title": "Marine microplastic concentration and associations with stroke and chronic disease prevalence.",
+      "topic": "Microplastics",
+      "authors": "Ponnana SR, Shamsa EH, Chen Z, et al. Al-Kindi S, Deo SV.",
+      "journal": "NPJ Cardiovascular Health",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42143131/"
+    },
+    {
+      "title": "Prevalence and mortality of cardiovascular-kidney-metabolic syndrome in US adults.",
+      "topic": "Cardio-Kidney-Metabolic",
+      "authors": "Cheema HA, Shahid A, Rahman SU, Nasir K, et al.",
+      "journal": "American Heart Journal Plus",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41884775/"
+    },
+    {
+      "title": "Improving patient access and adherence to nature-based clinical interventions.",
+      "topic": "Nature-Based Health",
+      "authors": "Heimlich-McQuarters M, Mouli SC, Lozada C, Dong W, Maddock JE, Al-Kindi S.",
+      "journal": "Frontiers in Public Health",
+      "year": 2026,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41822930/"
+    }
+  ],
+  "patents": [
+    {
+      "title": "Prediction of stent expansion for treatments",
+      "summary": "AI-enabled prediction of coronary stent expansion using pre-stent intravascular imaging, lumen segmentation, and calcified plaque characterization to optimize procedural planning and treatment outcomes.",
+      "tags": [
+        "Interventional Cardiology",
+        "Intravascular Imaging",
+        "CWRU Collaboration"
+      ],
+      "record": {
+        "id": "US12609207B2",
+        "type": "Granted patent",
+        "date": "April 21, 2026",
+        "url": "https://patents.google.com/patent/US12609207B2/en"
+      }
+    },
+    {
+      "title": "Prediction of stent expansion using finite element modeling and machine learning",
+      "summary": "Computational framework integrating intravascular imaging, finite element modeling, treatment simulations, and machine learning to estimate stent effectiveness and procedural response.",
+      "tags": [
+        "Finite Element Modeling",
+        "Machine Learning",
+        "Interventional AI",
+        "Case Western Reserve University"
+      ],
+      "record": {
+        "id": "US20240169524A1",
+        "type": "Published application",
+        "date": "May 23, 2024",
+        "url": "https://patents.google.com/patent/US20240169524A1/en"
+      }
+    },
+    {
+      "title": "Prediction of major adverse cardiovascular events from AI analysis of pericoronary adipose tissue",
+      "summary": "AI-derived analysis of pericoronary adipose tissue and CT imaging biomarkers for prediction of future cardiovascular events and precision prevention strategies.",
+      "tags": [
+        "MACE Prediction",
+        "CT Radiomics",
+        "Precision Prevention",
+        "Cardiovascular AI"
+      ],
+      "record": {
+        "id": "US12573036B2",
+        "type": "Granted patent",
+        "date": "March 10, 2026",
+        "url": "https://patents.google.com/patent/US12573036B2/en"
+      }
+    },
+    {
+      "title": "Deep-learning-based hepatic fat assessment",
+      "summary": "Automated liver and spleen segmentation approaches for scalable hepatic fat quantification and cardiometabolic phenotyping from routine imaging studies.",
+      "tags": [
+        "Deep Learning",
+        "Liver Fat AI",
+        "Cardiometabolic Imaging",
+        "CWRU Collaboration"
+      ],
+      "record": {
+        "id": "US12530770B2",
+        "type": "Granted patent",
+        "date": "January 20, 2026",
+        "url": "https://patents.google.com/patent/US12530770B2/en"
+      }
+    },
+    {
+      "title": "Digitized imaging data for patient management and obstructive CAD analysis",
+      "summary": "AI-enabled analysis of segmented non-contrast CT imaging data to support obstructive coronary artery disease characterization and patient management.",
+      "tags": [
+        "CAD Detection",
+        "CT Analytics",
+        "Patient Management",
+        "Clinical AI"
+      ],
+      "record": {
+        "id": "US20260038116A1",
+        "type": "Published application",
+        "date": "February 5, 2026",
+        "url": "https://patents.google.com/patent/US20260038116A1/en"
+      }
+    },
+    {
+      "title": "Medical analysis using spatiotemporal analysis and transformer-based models",
+      "summary": "Transformer-based and spatiotemporal deep learning architectures for predictive analysis from anatomic video sequences and longitudinal imaging data.",
+      "tags": [
+        "Transformers",
+        "Video AI",
+        "Deep Learning",
+        "Emory Collaboration"
+      ],
+      "record": {
+        "id": "US20250118435A1",
+        "type": "Published application",
+        "date": "April 10, 2025",
+        "url": "https://patents.google.com/patent/US20250118435A1/en"
+      }
+    },
+    {
+      "title": "Risk prediction of heart failure",
+      "summary": "AI-enabled extraction of pathophysiologic imaging features from clinical imaging datasets to predict incident heart failure and downstream cardiovascular outcomes.",
+      "tags": [
+        "Heart Failure",
+        "Risk Prediction",
+        "Imaging AI",
+        "Precision Cardiology"
+      ],
+      "record": {
+        "id": "US20250217970A1",
+        "type": "Published application",
+        "date": "July 3, 2025",
+        "url": "https://patents.google.com/patent/US20250217970A1/en"
+      }
+    },
+    {
+      "title": "Major adverse cardiovascular event risk prediction from comprehensive CT analysis",
+      "summary": "Systems and methods for predicting cardiovascular events using AI analysis of CT calcium score imaging, imaging biomarkers, and multimodal radiomic features.",
+      "tags": [
+        "MACE",
+        "Coronary Calcium",
+        "Radiomics",
+        "AI Risk Prediction"
+      ],
+      "record": {
+        "id": "US20240321461A1",
+        "type": "Published application",
+        "date": "September 26, 2024",
+        "url": "https://patents.google.com/patent/US20240321461A1/en"
+      }
+    }
+  ],
+  "programs": [
+    [
+      "imaging",
+      "Imaging AI & radiomics",
+      "Extracting cardiovascular and cardiometabolic phenotypes from CT, CMR, echocardiography, and retinal imaging.",
+      [
+        "Opportunistic phenotyping from routine imaging",
+        "Segmentation, radiomics, and imaging biomarkers",
+        "Disease burden and longitudinal risk"
+      ]
+    ],
+    [
+      "ehr",
+      "EHR & longitudinal phenotyping",
+      "Connecting diagnoses, laboratory results, medications, and clinical text to understand health over time.",
+      [
+        "Clinical trajectories and dynamic risk modeling",
+        "Natural language processing and LLM-enabled phenotyping",
+        "Cohort development and clinical data harmonization"
+      ]
+    ],
+    [
+      "exposome",
+      "Exposome & environmental health",
+      "Understanding how air pollution, heat, greenspace, and neighborhood conditions shape cardiometabolic health.",
+      [
+        "Environmental and social exposure linkage",
+        "Geospatial and neighborhood risk models",
+        "Disparities, resilience, and place-based prevention"
+      ]
+    ],
+    [
+      "ecg",
+      "ECG AI & biosignals",
+      "Learning from ECG images, waveforms, and physiological signals to improve disease detection and prediction.",
+      [
+        "Image- and waveform-based ECG modeling",
+        "Subclinical disease and cardiovascular outcomes",
+        "Telemetry and continuous physiological signals"
+      ]
+    ],
+    [
+      "prevention",
+      "Precision prevention",
+      "Identifying who may benefit from earlier assessment and more personalized preventive strategies.",
+      [
+        "Personalized cardiovascular risk assessment",
+        "Imaging-guided prevention",
+        "Clinical decision support research"
+      ]
+    ],
+    [
+      "implementation",
+      "Outcomes & implementation",
+      "Evaluating whether computational approaches can improve clinical decisions, health equity, and care delivery.",
+      [
+        "Real-world evidence and comparative effectiveness",
+        "Cost-effectiveness and population impact",
+        "Fairness, external validation, and implementation"
+      ]
+    ]
+  ],
+  "projects": [
+    {
+      "id": "ecg-gpt",
+      "topic": "ECG AI",
+      "title": "From ECG images to diagnostic language",
+      "short": "ECG-GPT",
+      "art": "ecg",
+      "pub": 1,
+      "status": "Multinational validation",
+      "contributors": "Elijah Rockers, Sadeer Al-Kindi, and a multidisciplinary collaboration led by Rohan Khera.",
+      "summary": "ECG-GPT generates diagnostic text from 12-lead ECG images, with evaluation across multiple countries.",
+      "problem": "ECGs are often shared as images. Computational interpretation must work across different recording and presentation settings.",
+      "approach": "A vision-to-language model was developed using ECG recordings paired with cardiologist-confirmed diagnostic statements.",
+      "finding": "The study reports development and multinational validation of image-based ECG interpretation.",
+      "question": "How can image-based interpretation be evaluated and integrated responsibly into clinical workflows?"
+    },
+    {
+      "id": "ct-heart-failure",
+      "topic": "Imaging AI",
+      "title": "More information from a calcium scan",
+      "short": "CT & heart failure risk",
+      "art": "ct",
+      "pub": 3,
+      "status": "Published cohort study",
+      "contributors": "Khurram Nasir and collaborators in the AI-CVD initiative.",
+      "summary": "AI-derived cardiac chamber ratios from coronary calcium scans were associated with future heart failure.",
+      "problem": "A coronary calcium scan contains anatomical information beyond the calcium score.",
+      "approach": "Investigators evaluated automated left-to-right cardiac chamber volume ratios in the Multi-Ethnic Study of Atherosclerosis.",
+      "finding": "Cardiac chamber volume ratios provided prognostic information about incident heart failure.",
+      "question": "Can opportunistic measurements support earlier identification of people who need further assessment?"
+    },
+    {
+      "id": "retinal-risk",
+      "topic": "Retinal AI",
+      "title": "A window into cardiovascular risk",
+      "short": "Retinal vascular phenotyping",
+      "art": "retina",
+      "pub": 2,
+      "status": "Published cohort study",
+      "contributors": "Sadeer Al-Kindi, Rohan Dhamdhere, Gourav Modanwal, Anant Madabhushi, and CRIC collaborators.",
+      "summary": "Retinal vascular features helped stratify cardiovascular risk in people with chronic kidney disease.",
+      "problem": "People with chronic kidney disease have heterogeneous cardiovascular risk. Retinal images offer a noninvasive view of the microvasculature.",
+      "approach": "The CARE-CKD study used deep learning to segment retinal vessels and machine learning to evaluate vascular features alongside clinical markers.",
+      "finding": "Retinal features added information for cardiovascular risk assessment in the CRIC cohort.",
+      "question": "How well do these features generalize to other populations and prospective clinical settings?"
+    },
+    {
+      "id": "transportation-noise",
+      "topic": "Exposome",
+      "title": "Transportation noise and metabolic health",
+      "short": "Noise & incident diabetes",
+      "art": "environment",
+      "pub": 8,
+      "status": "Published observational study",
+      "contributors": "Jad Ardakani, Izza Shahid, Rakesh Gullapelli, Khurram Nasir, Sadeer Al-Kindi, and collaborators.",
+      "summary": "A retrospective study examines transportation noise exposure and the development of type 2 diabetes.",
+      "problem": "The environments in which people live may influence cardiometabolic health.",
+      "approach": "The study linked transportation noise exposure with incident diabetes in an observational analysis.",
+      "finding": "This publication examines the association between transportation noise and type 2 diabetes; the paper provides the estimates and methodological details.",
+      "question": "Which environmental factors may inform prevention strategies at the population level?"
+    },
+    {
+      "id": "hemeage",
+      "topic": "Precision prevention",
+      "title": "Biological aging from routine blood tests",
+      "short": "HemeAge",
+      "art": "ehr",
+      "pub": 6,
+      "status": "Published two-cohort analysis",
+      "contributors": "Adi Siddharth, Budhaditya Bose, Rakesh Gullapelli, Charlie Nicolas, Khurram Nasir, Sadeer Al-Kindi, and collaborators.",
+      "summary": "HemeAge explores machine learning measures of hematologic aging and cardiovascular risk in two cohorts.",
+      "problem": "Routine blood tests may contain information about biological aging that is not captured by chronological age alone.",
+      "approach": "Investigators used machine learning to examine hematologic biomarkers of aging in relation to cardiovascular risk.",
+      "finding": "The publication evaluates HemeAge and cardiovascular risk across two cohorts.",
+      "question": "Can biomarkers derived from routine tests improve scalable risk assessment?"
+    },
+    {
+      "id": "environment-heart-failure",
+      "topic": "Exposome",
+      "title": "The environment across the heart failure journey",
+      "short": "Exposome & heart failure",
+      "art": "environment",
+      "pub": 0,
+      "status": "Published research review",
+      "contributors": "Sadeer Al-Kindi with Omar Hahad, Sanjay Rajagopalan, and collaborators.",
+      "summary": "A research review connects environmental exposures with heart failure risk and progression.",
+      "problem": "Heart failure develops within a broader environmental and social context.",
+      "approach": "This review synthesizes evidence on the environmental exposome across heart failure risk and progression.",
+      "finding": "The publication brings environmental exposures into the discussion of heart failure prevention and disease progression.",
+      "question": "How can exposure assessment inform future mechanistic and prevention studies?"
+    }
+  ],
+  "metrics": [
+    [
+      "3M+",
+      "Longitudinal patients"
+    ],
+    [
+      "8M+",
+      "ECGs"
+    ],
+    [
+      "200K+",
+      "Cardiac CT studies"
+    ],
+    [
+      "60K+",
+      "CMR studies"
+    ],
+    [
+      "500K+",
+      "Echocardiograms"
+    ],
+    [
+      "500K+",
+      "Retinal scans"
+    ]
+  ]
+}

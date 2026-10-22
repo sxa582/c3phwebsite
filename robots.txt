@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sxa582.github.io/c3phwebsite/sitemap.xml

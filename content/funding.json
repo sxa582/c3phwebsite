@@ -1,0 +1,330 @@
+{
+  "updated": "2026-10-22",
+  "projects": [
+    {
+      "id": "r01hl173186",
+      "group": "al-kindi",
+      "funder": "NIH / NHLBI",
+      "mechanism": "R01",
+      "core_project_number": "R01HL173186",
+      "subproject_id": null,
+      "headline": "CT radiomics for heart failure prevention",
+      "title": "Radiomics-based risk prediction of heart failure using CT calcium score exam",
+      "summary": "Developing and validating imaging-based models that use coronary calcium CT scans to identify people at risk for future heart failure.",
+      "center_investigator": "Sadeer Al-Kindi",
+      "role": "Multiple principal investigator",
+      "principal_investigators": [
+        "Sadeer Al-Kindi",
+        "Shuo Li"
+      ],
+      "contact_pi": "Shuo Li",
+      "recipient": "Case Western Reserve University",
+      "period_start": "2024-12-12",
+      "period_end": "2028-11-30",
+      "url": "https://reporter.nih.gov/project-details/11247546",
+      "earlier_award": false,
+      "annual_records": [
+        {
+          "application_id": 11247546,
+          "fiscal_year": 2026,
+          "project_number": "5R01HL173186-02",
+          "amount": 692323,
+          "url": "https://reporter.nih.gov/project-details/11247546"
+        },
+        {
+          "application_id": 11049497,
+          "fiscal_year": 2025,
+          "project_number": "1R01HL173186-01A1",
+          "amount": 742395,
+          "url": "https://reporter.nih.gov/project-details/11049497"
+        }
+      ]
+    },
+    {
+      "id": "r01hl184157",
+      "group": "al-kindi",
+      "funder": "NIH / NHLBI",
+      "mechanism": "R01",
+      "core_project_number": "R01HL184157",
+      "subproject_id": null,
+      "headline": "Smarter decisions about ischemia imaging",
+      "title": "Decision support for ischemia imaging based on AI analysis of low-cost/no-cost screening CT and ECG data",
+      "summary": "Combining screening CT, ECG, and clinical information to guide decisions about additional diagnostic imaging for myocardial ischemia.",
+      "center_investigator": "Sadeer Al-Kindi",
+      "role": "Multiple principal investigator",
+      "principal_investigators": [
+        "Sadeer Al-Kindi",
+        "Sanjay Rajagopalan",
+        "David L. Wilson"
+      ],
+      "contact_pi": "David L. Wilson",
+      "recipient": "Case Western Reserve University",
+      "period_start": "2026-07-15",
+      "period_end": "2028-03-31",
+      "url": "https://reporter.nih.gov/project-details/11289592",
+      "earlier_award": false,
+      "annual_records": [
+        {
+          "application_id": 11289592,
+          "fiscal_year": 2026,
+          "project_number": "1R01HL184157-01",
+          "amount": 1573126,
+          "url": "https://reporter.nih.gov/project-details/11289592"
+        }
+      ]
+    },
+    {
+      "id": "r01hl189500",
+      "group": "al-kindi",
+      "funder": "NIH / NHLBI",
+      "mechanism": "R01",
+      "core_project_number": "R01HL189500",
+      "subproject_id": null,
+      "headline": "RICTOR: precision cardio-oncology",
+      "title": "Radiomic-based Integrated Cancer Treatment Benefit and Cardiovascular Outcome Risk (RICTOR scale)",
+      "summary": "Integrating tumor and cardiovascular CT features with clinical and environmental data to study cancer treatment benefit alongside cardiovascular risk.",
+      "center_investigator": "Sadeer Al-Kindi",
+      "role": "Multiple principal investigator",
+      "principal_investigators": [
+        "Sadeer Al-Kindi",
+        "Anant Madabhushi",
+        "Gourav Modanwal"
+      ],
+      "contact_pi": "Anant Madabhushi",
+      "recipient": "Emory University",
+      "period_start": "2026-08-10",
+      "period_end": "2030-05-31",
+      "url": "https://reporter.nih.gov/project-details/11455533",
+      "earlier_award": false,
+      "annual_records": [
+        {
+          "application_id": 11455533,
+          "fiscal_year": 2026,
+          "project_number": "1R01HL189500-01A1",
+          "amount": 788336,
+          "url": "https://reporter.nih.gov/project-details/11455533"
+        }
+      ]
+    },
+    {
+      "id": "rf1ns145403",
+      "group": "al-kindi",
+      "funder": "NIH / NINDS",
+      "mechanism": "RF1",
+      "core_project_number": "RF1NS145403",
+      "subproject_id": null,
+      "headline": "Environment, mechanisms, and brain health",
+      "title": "External Environmental Determinants of Alzheimers Type Dementias and Mechanisms",
+      "summary": "Investigating how environmental exposures relate to Alzheimer’s disease and related dementias through population research, imaging, and mechanistic studies.",
+      "center_investigator": "Sadeer Al-Kindi",
+      "role": "Multiple principal investigator",
+      "principal_investigators": [
+        "Sadeer Al-Kindi",
+        "Anant Madabhushi",
+        "Andrew A. Pieper",
+        "Sanjay Rajagopalan"
+      ],
+      "contact_pi": "Sanjay Rajagopalan",
+      "recipient": "Case Western Reserve University",
+      "period_start": "2026-06-09",
+      "period_end": "2029-05-31",
+      "url": "https://reporter.nih.gov/project-details/11367588",
+      "earlier_award": false,
+      "annual_records": [
+        {
+          "application_id": 11367588,
+          "fiscal_year": 2026,
+          "project_number": "1RF1NS145403-01A1",
+          "amount": 1884854,
+          "url": "https://reporter.nih.gov/project-details/11367588"
+        }
+      ]
+    },
+    {
+      "id": "p50md017351-8207",
+      "group": "al-kindi",
+      "funder": "NIH / NIMHD",
+      "mechanism": "P50",
+      "core_project_number": "P50MD017351",
+      "subproject_id": "8207",
+      "headline": "ACHIEVE Investigator Development Core",
+      "title": "ACHIEVE Investigator Development Core",
+      "summary": "Supporting early-stage investigators through mentorship, pilot research, and career development in chronic disease prevention and health disparities.",
+      "center_investigator": "Sadeer Al-Kindi",
+      "role": "Assistant Director, Investigator Development Core",
+      "principal_investigators": [
+        "M. Safwan Badr"
+      ],
+      "contact_pi": "M. Safwan Badr",
+      "recipient": "Wayne State University",
+      "period_start": "2021-09-24",
+      "period_end": "2026-06-30",
+      "url": "https://reporter.nih.gov/project-details/10662509",
+      "earlier_award": true,
+      "annual_records": [
+        {
+          "application_id": 10662509,
+          "fiscal_year": 2023,
+          "project_number": "5P50MD017351-03",
+          "amount": 84280,
+          "url": "https://reporter.nih.gov/project-details/10662509"
+        },
+        {
+          "application_id": 10494189,
+          "fiscal_year": 2022,
+          "project_number": "5P50MD017351-02",
+          "amount": 816896,
+          "url": "https://reporter.nih.gov/project-details/10494189"
+        },
+        {
+          "application_id": 10437394,
+          "fiscal_year": 2021,
+          "project_number": "1P50MD017351-01",
+          "amount": 97780,
+          "url": "https://reporter.nih.gov/project-details/10437394"
+        }
+      ]
+    },
+    {
+      "id": "r01hl163535",
+      "group": "nasir",
+      "funder": "NIH / NHLBI",
+      "mechanism": "R01",
+      "core_project_number": "R01HL163535",
+      "subproject_id": null,
+      "headline": "Understanding dysfunctional HDL",
+      "title": "Human Atherogenesis with Underlying Dysfunctional HDL-Free Cholesterol",
+      "summary": "Studying free cholesterol carried by HDL and its relationship with coronary atherosclerosis to improve understanding of cardiovascular risk.",
+      "center_investigator": "Khurram Nasir",
+      "role": "Multiple principal investigator",
+      "principal_investigators": [
+        "Khurram Nasir",
+        "Henry J. Pownall"
+      ],
+      "contact_pi": "Henry J. Pownall",
+      "recipient": "Houston Methodist Research Institute",
+      "period_start": "2023-04-04",
+      "period_end": "2027-02-28",
+      "url": "https://reporter.nih.gov/project-details/11300968",
+      "earlier_award": false,
+      "annual_records": [
+        {
+          "application_id": 11300968,
+          "fiscal_year": 2026,
+          "project_number": "5R01HL163535-04",
+          "amount": 733191,
+          "url": "https://reporter.nih.gov/project-details/11300968"
+        },
+        {
+          "application_id": 11023079,
+          "fiscal_year": 2025,
+          "project_number": "5R01HL163535-03",
+          "amount": 748155,
+          "url": "https://reporter.nih.gov/project-details/11023079"
+        },
+        {
+          "application_id": 10820465,
+          "fiscal_year": 2024,
+          "project_number": "5R01HL163535-02",
+          "amount": 736357,
+          "url": "https://reporter.nih.gov/project-details/10820465"
+        },
+        {
+          "application_id": 10653634,
+          "fiscal_year": 2023,
+          "project_number": "1R01HL163535-01A1",
+          "amount": 765547,
+          "url": "https://reporter.nih.gov/project-details/10653634"
+        }
+      ]
+    },
+    {
+      "id": "r01hl158976",
+      "group": "nasir",
+      "funder": "NIH / NHLBI",
+      "mechanism": "R01",
+      "core_project_number": "R01HL158976",
+      "subproject_id": null,
+      "headline": "Myocardial injury phenotyping in MESA",
+      "title": "Contemporary Classification of Myocardial Injury Events in MESA: Defining Distinct Risk Factor Associations with Myocardial Infarction Type 1-5 and Acute Non-Ischemic Myocardial Injury",
+      "summary": "Classifying myocardial infarction subtypes and nonischemic myocardial injury in MESA to define their risk factors and support more precise prevention.",
+      "center_investigator": "Khurram Nasir",
+      "role": "Multiple principal investigator",
+      "principal_investigators": [
+        "Andrew DeFilippis",
+        "Khurram Nasir"
+      ],
+      "contact_pi": "Andrew DeFilippis",
+      "recipient": "Vanderbilt University Medical Center",
+      "period_start": "2021-08-20",
+      "period_end": "2027-07-31",
+      "url": "https://reporter.nih.gov/project-details/11181612",
+      "earlier_award": false,
+      "annual_records": [
+        {
+          "application_id": 11181612,
+          "fiscal_year": 2025,
+          "project_number": "5R01HL158976-05",
+          "amount": 861329,
+          "url": "https://reporter.nih.gov/project-details/11181612"
+        },
+        {
+          "application_id": 10902048,
+          "fiscal_year": 2024,
+          "project_number": "5R01HL158976-04",
+          "amount": 845239,
+          "url": "https://reporter.nih.gov/project-details/10902048"
+        },
+        {
+          "application_id": 10666488,
+          "fiscal_year": 2023,
+          "project_number": "5R01HL158976-03",
+          "amount": 871457,
+          "url": "https://reporter.nih.gov/project-details/10666488"
+        },
+        {
+          "application_id": 10471434,
+          "fiscal_year": 2022,
+          "project_number": "5R01HL158976-02",
+          "amount": 896650,
+          "url": "https://reporter.nih.gov/project-details/10471434"
+        },
+        {
+          "application_id": 10279056,
+          "fiscal_year": 2021,
+          "project_number": "1R01HL158976-01",
+          "amount": 969488,
+          "url": "https://reporter.nih.gov/project-details/10279056"
+        }
+      ]
+    },
+    {
+      "id": "pressure-check",
+      "group": "nasir",
+      "funder": "PCORI",
+      "mechanism": "Multisite study",
+      "headline": "Pressure Check: prevention in the community",
+      "title": "Comparing Three Ways To Manage High Blood Pressure Among Adults",
+      "summary": "Comparing community-connected care models, telehealth, and community health worker support to improve blood pressure control across four US cities.",
+      "center_investigator": "Khurram Nasir",
+      "role": "Houston co-principal investigator",
+      "recipient": "Yale University",
+      "partners": [
+        "Houston Methodist",
+        "Yale New Haven Health",
+        "Massachusetts General / Brigham",
+        "Sentara Health"
+      ],
+      "url": "https://www.pcori.org/research-results/2023/comparing-three-ways-manage-high-blood-pressure-among-adults",
+      "funding_source_url": "https://www.houstonmethodist.org/leading-medicine-blog/articles/a/getting-to-the-heart-of-hypertension-disparities/",
+      "annual_records": [],
+      "principal_investigators": [
+        "Erica Spatz",
+        "Rafael Perez-Escamilla"
+      ],
+      "period_display": "Awarded 2023 · Project end 2029",
+      "study_budget": 19471922,
+      "study_url": "https://www.pressurecheck.org/houston"
+    }
+  ]
+}
